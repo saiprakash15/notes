@@ -14,22 +14,44 @@ body,
   height: 100vh;
   overflow: hidden;
   font-size: 16px;
-  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/lightpaperfibers.png);
+  background-color: rgb(255, 255, 119);
 }
 
 button {
-  background: none;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  font-size: inherit;
-  font-family: inherit;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
   cursor: pointer;
-  color: #08c;
 }
 button:hover {
-  color: #04c;
+  color: rgb(18, 18, 19);
+  font-weight: bolder;
+  box-shadow: rgb(73, 73, 63);
 }
+
+#Delete-Button {
+  background-color: #e75225;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#Delete-Button:hover {
+  font-weight: bolder;
+  color: rgb(20, 20, 20);
+}
+
 
 .App {
   display: flex;
@@ -80,8 +102,8 @@ button:hover {
 }
 .app-sidebar-note.active,
 .app-sidebar-note.active small {
-  background: #08c;
-  color: white;
+  background: rgb(147, 201, 228);
+  color: rgb(34, 25, 25);
 }
 
 /* NOTE EDITOR/PREVIEW (MAIN) STYLES */

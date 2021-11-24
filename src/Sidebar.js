@@ -6,7 +6,10 @@ const Sidebar = ({
   setActiveNote,
 }) => {
   const sortedNotes = notes.sort((a, b) => b.lastModified - a.lastModified);
-    
+  function myFunction( ) {
+   
+    document.body.style.backgroundColor = "red" 
+  }
   return (
     <div className="app-sidebar">
       <div className="app-sidebar-header">
@@ -21,7 +24,7 @@ const Sidebar = ({
           >
             <div className="sidebar-note-title">
               <strong>{title}</strong>
-              <button onClick={(e) => onDeleteNote(id)}>Delete</button>
+              <button id="Delete-Button"  onClick={(e) => onDeleteNote(id)}> Delete </button>
             </div>
 
             <p>{body && body.substr(0, 100) + "..."}</p>
