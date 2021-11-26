@@ -18,7 +18,7 @@ function App()
       id:uuidv4(),
       title: "Untitled Note",
       body:"",
-      lastmodifies:Date.now()
+      lastmodifies: Date.now() ,
      };
       setNotes([newNote,...notes]);
       
@@ -65,6 +65,7 @@ console.log(getActiveNote);
                 activeNote={getActiveNote()}
                 onUpdateNote={onUpdateNote} 
       />
+      
     </div>
        
   );
